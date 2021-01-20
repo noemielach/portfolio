@@ -1,10 +1,16 @@
 <!-- <div>Picture of Me + Burger Menu</div> -->
-<div>
-  <h1>Noémie Lachman</h1>
-  <h3>Fullstack Web Developer</h3>
+<div class= "banner">
+  <div class= "banner-text">
+    <h1>Noémie Lachman</h1>
+    <h3>Fullstack Web Developer</h3>
+  </div>
+  <%= cl_image_tag("portfolio/noemie_fbszsd",
+      width: '100%', class: "home-image") %>
 </div>
 <!-- <div>Quick Intro + CV download</div> -->
-<h3>I am a fullstack web developer who used to work as a product manager, I can help you give life to your digital projects</h3>
+<div class= "description">
+  <h3>I am a fullstack web developer who used to work as a product manager, I can help you give life to your digital projects</h3>
+</div>
 <!-- <div>Links for contact</div> -->
 <div class = "socials row">
   <%= link_to "", "https://www.linkedin.com/in/noemie-lachman-31035b119/", :target => "_blank", class: "fab fa-linkedin col" %>
@@ -20,5 +26,94 @@
   <p>Mr. Cocktail</p>
 </div>
 <div>Photos</div>
+<div class="fg-gallery">
+  <%= cl_image_tag("portfolio/000042570017_jolsgk",
+      width: '100%', class: "") %>
+  <%= cl_image_tag("portfolio/000042570015_kmz5u5",
+      width: '100%', class: "") %>
+  <%= cl_image_tag("portfolio/000042570008_gklobk",
+      width: '100%', class: "") %>
+  <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "") %>
+</div>
 <div>Contact form</div>
 <div>Footer</div>
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <%= cl_image_tag("portfolio/000042570017_jolsgk",
+      width: '100%', class: "") %>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <%= cl_image_tag("portfolio/000042570015_kmz5u5",
+      width: '100%', class: "") %>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <%= cl_image_tag("portfolio/000042570008_gklobk",
+      width: '100%', class: "") %>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "") %>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "") %>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "") %>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <%= cl_image_tag("portfolio/000042570017_jolsgk",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(1);") %>
+    </div>
+    <div class="column">
+      <%= cl_image_tag("portfolio/000042570015_kmz5u5",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(2);") %>
+    </div>
+    <div class="column">
+      <%= cl_image_tag("portfolio/000042570008_gklobk",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(3);") %>
+    </div>
+    <div class="column">
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(4);") %>
+    </div>
+    <div class="column">
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(5);") %>
+    </div>
+    <div class="column">
+      <%= cl_image_tag("portfolio/000039500033_y23jju",
+      width: '100%', class: "demo cursor", onClick: "currentSlide(6);") %>
+    </div>
+  </div>
+</div>
