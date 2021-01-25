@@ -1,16 +1,19 @@
 .home_image{
-  position: relative;
+  // position: relative;
+  // height: 400px;
 }
 
 .banner-text{
-  position: absolute;
+  // position: absolute;
   top: 50px;
-  color: white;
   padding: 24px;
+  h1{
+    font-size: 80px;
+  }
 }
 
 .description {
   padding: 25px;
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
 }
