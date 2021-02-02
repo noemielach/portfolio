@@ -1,37 +1,91 @@
 <!-- <div>Picture of Me + Burger Menu</div> -->
 <div class= "banner d-flex justify-content-between">
   <div class= "banner-text">
-    <h1>Noémie Lachman</h1>
+    <h1 id="title">Noémie Lachman</h1>
     <h3>Fullstack Web Developer</h3>
+    <%= link_to "About Me", "#about", class: "button"%>
+    <%= link_to "Reach Out", "#contact", class: "button"%>
   </div>
   <%= cl_image_tag("portfolio/noemie_fbszsd", height: '700px', class: "home-image") %>
 </div>
 <!-- <div>Quick Intro + CV download</div> -->
 <div class= "description">
-  <h1>About Me</h1>
-  <p>After graduating from a Master Degree in Management Science, I started my career in B2Btech startup in NYC as a Product Manager. I then decided to learn to code. I am now a fullstack web developer and can help you bring your ideas to life with a combination of tech, business and product mindset</p>
+  <h1 id="about">About Me</h1>
+  <p>After graduating from a Master Degree in Management Science, I started my career in B2Btech startup in NYC as a Product Manager. I then decided to learn to code. I am now a fullstack web developer and can help you bring your ideas to life with a combination of tech, business and product mindset
+  </p>
+  <p>After graduating from a Master Degree in Management Science, I started my career in B2Btech startup in NYC as a Product Manager. I then decided to learn to code. I am now a fullstack web developer and can help you bring your ideas to life with a combination of tech, business and product mindset
+  </p>
+  <p>After graduating from a Master Degree in Management Science, I started my career in B2Btech startup in NYC as a Product Manager. I then decided to learn to code. I am now a fullstack web developer and can help you bring your ideas to life with a combination of tech, business and product mindset
+  </p>
   <p>Feel free to reach out</p>
 </div>
 <!-- <div>Links for contact</div> -->
-<div class = "socials row">
-  <%= link_to "", "https://www.linkedin.com/in/noemie-lachman-31035b119/", :target => "_blank", class: "fab fa-linkedin col" %>
-  <%= link_to "", "https://github.com/noemielach", :target => "_blank", class: "fab fa-github col" %>
-  <%= link_to "", "https://www.instagram.com/noemielach/?hl=fr", :target => "_blank", class: "fab fa-instagram col" %>
-  <%#= link_to "", "mail-to:noemie.lachman@hotmail.fr", :target => "_blank", class: "fas fa-at email col" %>
-</div>
 <!-- <div>Dev Projects</div> -->
+<div>
+  <h1 style="text-align:center;" >My work</h1>
+</div>
 <div class = "projects row">
   <div class = "col">
-    <p>etracker</p>
+    <div class="card-trip">
+      <%= cl_image_tag("portfolio/Screenshot_2021-01-20_at_19.56.31_tjpjuu.png", height: '250px', class: "home-image") %>
+      <div class="card-trip-infos">
+        <div>
+          <p>eTracker</p>
+          <p>description</p>
+          <p>Github</p>
+          <p>Demo</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class = "col">
-    <p>DressBnB</p>
+    <div class="card-trip">
+      <%= cl_image_tag("portfolio/Screenshot_2021-01-20_at_19.57.32_jhjeai.png", height: '250px', class: "home-image") %>
+      <div class="card-trip-infos">
+        <div>
+          <p>DressBnB</p>
+          <p>description</p>
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class = "col">
-    <p>Archets Suzuki</p>
+    <div class="card-trip">
+      <%= cl_image_tag("portfolio/Screenshot_2021-01-20_at_19.57.00_bclvhi.png", height: '250px', class: "home-image") %>
+      <div class="card-trip-infos">
+        <div>
+          <p>Archets Suzuki</p>
+          <p>description</p>
+          <p>Github</p>
+          <p>Demo</p>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class = "col">
-    <p>Mr. Cocktail</p>
+    <div class="card-trip">
+      <%= cl_image_tag("portfolio/Screenshot_2021-01-25_at_18.25.04_wjl1ot.png", height: '250px', class: "home-image") %>
+      <div class="card-trip-infos">
+        <div>
+          <p>Locktails</p>
+          <p>description</p>
+          <p>Github</p>
+          <p>Demo</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+<div id="contact">
+  <h1 style="text-align:center;" >Get in touch</h1>
+  <div class = "socials row">
+    <%= link_to "", "https://www.linkedin.com/in/noemie-lachman-31035b119/", target: :_blank, class: "fab fa-linkedin col" %>
+    <%= link_to "", "https://github.com/noemielach", target: :_blank, class: "fab fa-github col" %>
+    <%= link_to "", "https://www.instagram.com/noemielach/?hl=fr", target: :_blank, class: "fab fa-instagram col" %>
+    <%#= link_to "", "mail-to:noemie.lachman@hotmail.fr", :target => "_blank", class: "fas fa-at email col" %>
+  </div>
+</div>

@@ -1,7 +1,9 @@
-.home_image{
+.banner{
   // position: relative;
   // height: 400px;
+  height: calc(100vh - 90px);
 }
+
 
 .banner-text{
   // position: absolute;
@@ -12,8 +14,7 @@
   }
 }
 
-.description {
-  padding: 25px;
-  text-align: center;
-  font-size: 48px;
+#title{
+  font-family: 'Rubik';
+  font-style: 60px;
 }
